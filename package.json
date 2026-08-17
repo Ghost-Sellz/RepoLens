@@ -1,0 +1,22 @@
+{
+  "name": "repolens-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "RepoLens — Production-Ready GitHub Repository Analyzer",
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev:cli": "pnpm --filter @repolens/cli dev",
+    "dev:web": "pnpm --filter @repolens/web dev",
+    "clean": "pnpm -r exec rm -rf dist .next"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

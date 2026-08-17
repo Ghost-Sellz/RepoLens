@@ -1,0 +1,28 @@
+{
+  "name": "@repolens/cli",
+  "version": "1.0.0",
+  "bin": {
+    "repolens": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && node dist/index.js",
+    "lint": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@repolens/analyzer": "workspace:*",
+    "@repolens/types": "workspace:*",
+    "@repolens/config": "workspace:*",
+    "@repolens/reporting": "workspace:*",
+    "@repolens/github": "workspace:*",
+    "commander": "^12.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "cli-table3": "^0.6.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0"
+  }
+}
